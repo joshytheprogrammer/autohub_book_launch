@@ -7,7 +7,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 const email = ref('')
 function onSubmit() {
   // Replace with actual email capture logic (API, etc.)

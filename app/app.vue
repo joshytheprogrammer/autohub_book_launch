@@ -1,7 +1,7 @@
 <template>
   <main class="min-h-screen bg-white text-gray-900 font-sans">
     <HeroSection
-      coverSrc="/favicon.ico"
+      coverSrc="/Book_cover.jpg"
       title="The Future of Mobility"
       subtitle="A visionary book on Land, Air, Sea, Space & AI. Preorder now for ₦15,000."
       @payWithPaystack="payWithPaystack"
@@ -48,5 +48,5 @@ function payWithPaystack() {
 </script>
 
 <style>
-@import "./assets/tailwind.css";
+/* @import "./assets/tailwind.css"; */
 </style>
