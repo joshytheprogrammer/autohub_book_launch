@@ -12,10 +12,9 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <div
-          v-for="(testimonial, index) in testimonials"
+          v-for="testimonial in testimonials"
           :key="testimonial.name"
-          class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 fade-in-up"
-          :style="{ animationDelay: `${index * 150}ms` }"
+          class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
         >
           <!-- Rating Stars -->
           <div class="flex justify-center mb-4">
@@ -47,32 +46,10 @@
   </section>
 </template>
 
-<script setup lang="ts">
-interface Testimonial {
-  name: string
-  role: string
-  content: string
-  rating: number
-}
-
-interface Props {
-  testimonials: Testimonial[]
-}
-
-defineProps<Props>()
+<script setup>
+const props = defineProps({
+  testimonials: Array
+})
 </script>
 
-<style scoped>
-.fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0;
-  transform: translateY(30px);
-}
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>

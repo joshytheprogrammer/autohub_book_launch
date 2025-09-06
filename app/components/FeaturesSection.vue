@@ -17,23 +17,14 @@
           :icon="feature.icon"
           :title="feature.title"
           :description="feature.description"
-          :delay="index * 100"
         />
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts">
-interface Feature {
-  icon: string
-  title: string
-  description: string
-}
-
-interface Props {
-  features: Feature[]
-}
-
-defineProps<Props>()
+<script setup>
+const props = defineProps({
+  features: Array
+})
 </script>

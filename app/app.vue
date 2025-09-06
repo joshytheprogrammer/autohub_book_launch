@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen bg-gradient-to-br from-blue-50 to-slate-100 text-gray-900 font-sans">
+  <main class="min-h-screen text-gray-900 font-sans">
     <HeroSection
       :cover-src="bookData.coverSrc"
       :title="bookData.title"
@@ -16,32 +16,13 @@
   </main>
 </template>
 
-<script setup lang="ts">
-interface BookData {
-  coverSrc: string
-  title: string
-  subtitle: string
-  author: string
-  price: string
-  features: Array<{
-    icon: string
-    title: string
-    description: string
-  }>
-  testimonials: Array<{
-    name: string
-    role: string
-    content: string
-    rating: number
-  }>
-}
-
-const bookData: BookData = {
+<script setup>
+const bookData = {
   coverSrc: '/Book_cover.jpg',
   title: 'Modern Automobile CEO',
   subtitle: 'The definitive guide to leadership in the evolving automotive industry. From Land Vehicles to Maritime, Aviation, Space Exploration, and AI integration.',
   author: 'Chika Joel (J-ib)',
-  price: '₦15,000',
+  price: '₦50,000',
   features: [
     {
       icon: '🚗',
@@ -91,25 +72,25 @@ const bookData: BookData = {
   ]
 }
 
-function handlePreorder(): void {
+function handlePreorder() {
   payWithPaystack()
 }
 
-function handleEmailCapture(email: string): void {
+function handleEmailCapture(email) {
   console.log('Email captured:', email)
   // Add your email capture logic here
 }
 
-function payWithPaystack(): void {
+function payWithPaystack() {
   if (typeof window === 'undefined') return
   
-  const handler = (window as any).PaystackPop && (window as any).PaystackPop.setup({
-    key: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxxx', // TODO: Replace with real key
+  const handler = window.PaystackPop && window.PaystackPop.setup({
+    key: 'pk_test_10601adfe19c482cb28b4196739401bc7846e838', // TODO: Replace with real key
     email: 'customer@email.com', // TODO: Replace with real email
     amount: 1500000, // kobo (₦15,000)
     currency: 'NGN',
     ref: `MACEO_${Date.now()}`,
-    callback: function(response: any) {
+    callback: function(response) {
       alert('Payment successful! Reference: ' + response.reference)
     },
     onClose: function() {
@@ -126,17 +107,5 @@ function payWithPaystack(): void {
 </script>
 
 <style>
-@import "./assets/tailwind.css";
-
-/* Additional global styles */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-feature-settings: "liga" 1, "kern" 1;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*  */
 </style>

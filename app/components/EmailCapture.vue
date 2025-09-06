@@ -57,20 +57,16 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue'
 
-interface Emits {
-  (e: 'email-captured', email: string): void
-}
-
-const emit = defineEmits<Emits>()
+const emit = defineEmits(['email-captured'])
 
 const email = ref('')
 const isSubmitting = ref(false)
 const submitted = ref(false)
 
-async function onSubmit(): Promise<void> {
+async function onSubmit() {
   if (!email.value) return
   
   isSubmitting.value = true
