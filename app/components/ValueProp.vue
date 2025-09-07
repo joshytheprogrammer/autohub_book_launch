@@ -43,11 +43,31 @@
             <p class="text-gray-600">Cross-domain expertise spanning five mobility sectors</p>
           </div>
         </div>
+        
+        <!-- Call to Action -->
+        <div class="mt-12">
+          <PreorderButton 
+            text="Get Your Copy Now"
+            :price="price"
+            custom-class="mx-auto"
+            @click="$emit('preorder')"
+          />
+          <p class="text-sm text-gray-500 mt-3 text-center">
+            📦 Free shipping worldwide • 🔒 Secure payment • 📱 Instant digital access
+          </p>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
-<script setup lang="ts">
-// No props needed - this is a static value proposition section
+<script setup>
+const props = defineProps({
+  price: {
+    type: String,
+    default: '₦50,000'
+  }
+})
+
+defineEmits(['preorder'])
 </script>
