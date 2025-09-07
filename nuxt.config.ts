@@ -4,6 +4,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   
+  runtimeConfig: {
+    public: {
+      paystackPublicKey: process.env.NUXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_10601adfe19c482cb28b4196739401bc7846e838'
+    }
+  },
+  
   app: {
     head: {
       title: 'Modern Automobile CEO - Preorder Now',

@@ -72,8 +72,9 @@ const {
 } = usePayment()
 
 // Paystack configuration
+const runtimeConfig = useRuntimeConfig()
 const paystackConfig = {
-  publicKey: 'pk_test_10601adfe19c482cb28b4196739401bc7846e838' // Replace with your actual public key
+  publicKey: runtimeConfig.public.paystackPublicKey
 }
 
 const bookData = {
