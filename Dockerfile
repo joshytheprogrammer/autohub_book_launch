@@ -1,5 +1,5 @@
 # Use Node.js LTS as base
-FROM node:18-alpine@sha256:5e2e2e7b7e6e8b7e6e8b7e6e8b7e6e8b7e6e8b7e6e8b7e6e8b7e6e8b7e6e8b7e6
+FROM node:20-alpine
 
 # Set working directory
 WORKDIR /app
