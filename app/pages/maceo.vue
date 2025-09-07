@@ -10,6 +10,7 @@
     />
     <MaceoFeaturesSection :features="bookData.features" />
     <MaceoTestimonialsSection :testimonials="bookData.testimonials" />
+    <MaceoAboutAuthor :author="bookData.author" />
     <MaceoValueProp :price="bookData.price" @preorder="openPaymentModal" />
     <MaceoEmailCapture @email-captured="handleEmailCapture" />
     <MaceoFooterSection :author="bookData.author" />

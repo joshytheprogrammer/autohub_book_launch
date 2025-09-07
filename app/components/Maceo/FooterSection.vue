@@ -37,7 +37,21 @@
             <li><a href="#about" class="hover:text-white transition-colors">About the Book</a></li>
             <li><a href="#author" class="hover:text-white transition-colors">About the Author</a></li>
             <li><a href="#reviews" class="hover:text-white transition-colors">Reviews</a></li>
-            <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+            <li>
+              <NuxtLink to="/contact" class="hover:text-white transition-colors">
+                Contact
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/about" class="hover:text-white transition-colors">
+                About AutoHub
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/" class="hover:text-white transition-colors">
+                All Books
+              </NuxtLink>
+            </li>
           </ul>
         </div>
         
@@ -69,12 +83,13 @@
   </footer>
 </template>
 
-<script setup lang="ts">
-interface Props {
-  author: string
-}
-
-defineProps<Props>()
+<script setup>
+const props = defineProps({
+  author: {
+    type: String,
+    required: true
+  }
+})
 
 const currentYear = new Date().getFullYear()
 </script>
