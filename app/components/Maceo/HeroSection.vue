@@ -5,7 +5,7 @@
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <!-- Book Cover -->
           <div class="flex-shrink-0">
-            <BookCover 
+            <MaceoBookCover 
               :cover-src="coverSrc" 
               :alt="`${title} by ${author}`"
               custom-class="w-64 h-80 lg:w-72 lg:h-96"

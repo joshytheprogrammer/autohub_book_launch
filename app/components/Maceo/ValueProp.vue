@@ -46,7 +46,7 @@
         
         <!-- Call to Action -->
         <div class="mt-12">
-          <PreorderButton 
+          <MaceoPreorderButton 
             text="Get Your Copy Now"
             :price="price"
             custom-class="mx-auto"
