@@ -8,6 +8,25 @@
       :price="bookData.price"
       @preorder="openPaymentModal"
     />
+    <MaceoProgramOverview 
+      :price="bookData.price" 
+      @preorder="openPaymentModal" 
+    />
+    <MaceoWhyThisMatters 
+      :price="bookData.price" 
+      @preorder="openPaymentModal" 
+    />
+    <MaceoTableOfContents />
+    <MaceoLearningOutcomes />
+    <MaceoIndustrySectors />
+    <MaceoWealthStrategies 
+      :price="bookData.price" 
+      @preorder="openPaymentModal" 
+    />
+    <MaceoSuccessFramework 
+      :price="bookData.price" 
+      @preorder="openPaymentModal" 
+    />
     <MaceoFeaturesSection :features="bookData.features" />
     <MaceoTestimonialsSection :testimonials="bookData.testimonials" />
     <MaceoAboutAuthor :author="bookData.author" />
@@ -80,56 +99,68 @@ const paystackConfig = {
 const bookData = {
   coverSrc: '/Book_cover.jpg',
   title: 'Modern Automobile CEO',
-  subtitle: 'The definitive guide to leadership in the evolving automotive industry. From Land Vehicles to Maritime, Aviation, Space Exploration, and AI integration.',
+  subtitle: 'The comprehensive blueprint for automotive industry leadership. Master land vehicles, maritime, aviation, AI integration, space exploration, and wealth creation strategies.',
   author: 'Chika Joel (J-ib)',
   price: '₦50,000',
   features: [
     {
-      icon: '🚗',
-      title: 'Land Vehicle Innovation',
-      description: 'Master the future of terrestrial transportation and autonomous vehicle leadership'
+      icon: '�',
+      title: '12 Comprehensive Chapters',
+      description: 'Complete transformation journey from beginner to conglomerate builder'
     },
     {
-      icon: '⚓',
-      title: 'Maritime Leadership',
-      description: 'Navigate the complexities of modern shipping and marine technology'
+      icon: '🏭',
+      title: 'Manufacturing Mastery',
+      description: 'Deep dive into automotive manufacturing across all sectors and components'
     },
     {
-      icon: '✈️',
-      title: 'Aviation Excellence',
-      description: 'Soar above competition with cutting-edge aerospace management strategies'
+      icon: '💰',
+      title: 'Wealth Creation Systems',
+      description: 'Proven financial strategies and investment approaches for automotive success'
+    },
+    {
+      icon: '🤝',
+      title: 'Strategic Relationships',
+      description: 'Build powerful networks with industry leaders, government, and international partners'
     },
     {
       icon: '🚀',
-      title: 'Space Exploration',
-      description: 'Pioneer the next frontier of human mobility and space commerce'
+      title: 'Future Technologies',
+      description: 'Master AI, space exploration, electric vehicles, and emerging automotive technologies'
     },
     {
-      icon: '🤖',
-      title: 'AI Integration',
-      description: 'Harness artificial intelligence to revolutionize mobility solutions'
+      icon: '🌍',
+      title: 'Global Expansion',
+      description: 'Scale from local operations to international conglomerate status'
     }
   ],
   testimonials: [
     {
-      name: 'Dr. Sarah Johnson',
-      role: 'Automotive Industry Analyst',
-      content: 'An essential read for anyone looking to understand the future of mobility. Chika Joel provides invaluable insights into industry transformation.',
+      name: 'Dr. Ngozi Okafor',
+      role: 'Automotive Industry Consultant, Abuja',
+      content: 'This is the most practical guide to automotive leadership I’ve ever come across. The 12 chapters take you step by step from foundation to building a thriving business empire.',
       rating: 5
     },
     {
-      name: 'Michael Chen',
-      role: 'CEO, TechMobility Inc.',
-      content: 'This book bridges the gap between traditional automotive thinking and the revolutionary changes coming to our industry.',
+      name: 'Tunde Balogun',
+      role: 'CEO, Mototek Nigeria Ltd.',
+      content: 'This book goes beyond theory — it breaks down the entire automotive ecosystem from local assembly to global opportunities. The wealth creation insights alone are worth the price.',
       rating: 5
     },
     {
-      name: 'Prof. Elena Rodriguez',
-      role: 'Transportation Technology Expert',
-      content: 'A comprehensive guide that covers everything from current challenges to future opportunities in the mobility sector.',
+      name: 'Prof. Aisha Danladi',
+      role: 'Transportation & Innovation Scholar, UNILAG',
+      content: 'Chika Joel has written a masterpiece that connects Nigeria’s auto industry with the future of mobility and emerging technologies. A must-read for serious entrepreneurs.',
+      rating: 5
+    },
+    {
+      name: 'Ibrahim Oladele',
+      role: 'Automotive Entrepreneur, Lagos',
+      content: 'The MACEOS program opened my eyes to opportunities I never imagined. From vehicle design to space technology — this book completely reshaped my business outlook.',
       rating: 5
     }
   ]
+
 }
 
 function handleEmailCapture(email) {
