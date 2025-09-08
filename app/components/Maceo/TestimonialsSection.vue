@@ -38,7 +38,7 @@
           <!-- Author -->
           <div class="text-center">
             <div class="font-semibold text-gray-900">{{ testimonial.name }}</div>
-            <div class="text-sm text-blue-600">{{ testimonial.role }}</div>
+            <div class="text-sm text-blue-900">{{ testimonial.role }}</div>
           </div>
         </div>
       </div>

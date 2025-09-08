@@ -79,7 +79,7 @@ const closeButtonClasses = computed(() => {
     success: 'text-green-400 hover:text-green-600 focus:ring-green-600',
     error: 'text-red-400 hover:text-red-600 focus:ring-red-600',
     warning: 'text-yellow-400 hover:text-yellow-600 focus:ring-yellow-600',
-    info: 'text-blue-400 hover:text-blue-600 focus:ring-blue-600'
+    info: 'text-blue-400 hover:text-blue-900 focus:ring-blue-900'
   }
   return classes[props.type]
 })

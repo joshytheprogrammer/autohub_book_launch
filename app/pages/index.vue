@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen">
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 lg:py-24">
+    <section class="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16 lg:py-24">
       <div class="container mx-auto px-6 text-center">
         <h1 class="text-4xl lg:text-6xl font-bold mb-6">
           AutoHub Books
@@ -50,20 +50,20 @@
         </div>
 
         <!-- Coming Soon -->
-        <div class="mt-16 text-center">
+        <!-- <div class="mt-16 text-center">
           <div class="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 max-w-md mx-auto">
             <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-2">More Books Coming Soon</h3>
             <p class="text-gray-600 mb-4">We're working on expanding our collection with more industry-leading insights.</p>
-            <button class="text-blue-600 hover:text-blue-700 font-medium">
+            <button class="text-blue-900 hover:text-blue-700 font-medium">
               Get notified →
             </button>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
   </div>

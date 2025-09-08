@@ -9,7 +9,7 @@
     <!-- Modal -->
     <div class="relative bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 transform transition-all">
       <!-- Header -->
-      <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 rounded-t-2xl">
+      <div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white p-6 rounded-t-2xl">
         <div class="flex items-center justify-between">
           <h2 class="text-xl font-bold">Complete Your Order</h2>
           <button 
@@ -31,7 +31,7 @@
           <div>
             <h3 class="font-semibold text-gray-900">{{ bookTitle }}</h3>
             <p class="text-sm text-gray-600">by {{ author }}</p>
-            <p class="text-lg font-bold text-blue-600">{{ price }}</p>
+            <p class="text-lg font-bold text-blue-900">{{ price }}</p>
           </div>
         </div>
         
@@ -75,7 +75,7 @@
             </div>
             <div class="flex justify-between items-center font-bold text-lg">
               <span>Total:</span>
-              <span class="text-blue-600">{{ price }}</span>
+              <span class="text-blue-900">{{ price }}</span>
             </div>
           </div>
           
@@ -83,7 +83,7 @@
           <button
             type="submit"
             :disabled="isProcessing || !customerEmail || !customerName"
-            class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 flex items-center justify-center gap-2"
+            class="w-full bg-gradient-to-r from-blue-900 to-blue-700 text-white py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-blue-800 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 flex items-center justify-center gap-2"
           >
             <span v-if="!isProcessing">Pay Securely with Paystack</span>
             <span v-else class="flex items-center gap-2">

@@ -21,13 +21,13 @@
           >
             <div class="flex items-start gap-6">
               <div class="flex-shrink-0">
-                <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-3xl group-hover:bg-blue-700 transition-colors">
+                <div class="w-16 h-16 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-3xl group-hover:bg-blue-700 transition-colors">
                   {{ sector.icon }}
                 </div>
               </div>
               
               <div class="flex-1">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors">
                   {{ sector.name }}
                 </h3>
                 <p class="text-gray-600 leading-relaxed mb-6">

@@ -43,7 +43,7 @@
 
           <div class="bg-white rounded-2xl p-8 shadow-lg">
             <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white text-2xl">
+              <div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white text-2xl">
                 🏦
               </div>
               <h3 class="text-2xl font-bold text-gray-900">Banking & Financial Systems</h3>

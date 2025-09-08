@@ -69,7 +69,7 @@
               <h4 class="text-2xl font-bold text-gray-900">Revolutionary Approach</h4>
               <div class="space-y-4">
                 <div v-for="approach in revolutionaryApproaches" :key="approach.title" class="flex gap-4">
-                  <div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                  <div class="flex-shrink-0 w-8 h-8 bg-blue-900 text-white rounded-full flex items-center justify-center text-sm font-bold">
                     ✓
                   </div>
                   <div>
@@ -98,7 +98,7 @@
         </div>
 
         <!-- The Impact -->
-        <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 lg:p-12 text-white">
+        <div class="bg-gradient-to-r from-blue-900 to-purple-600 rounded-2xl p-8 lg:p-12 text-white">
           <div class="text-center mb-12">
             <h3 class="text-3xl font-bold mb-4">The Transformational Impact</h3>
             <p class="text-xl text-blue-100 max-w-3xl mx-auto">
@@ -135,7 +135,7 @@
           <div class="text-center mt-12">
             <button 
               @click="$emit('preorder')"
-              class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center gap-3"
+              class="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center gap-3"
             >
               <span>Join The Transformation</span>
               <span class="font-bold">{{ price }}</span>

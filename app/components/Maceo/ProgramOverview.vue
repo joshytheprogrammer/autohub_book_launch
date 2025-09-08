@@ -71,7 +71,7 @@
           
           <div class="grid md:grid-cols-3 gap-8">
             <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl">
-              <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+              <div class="w-16 h-16 bg-blue-900 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                 🎯
               </div>
               <h4 class="text-xl font-bold text-gray-900 mb-3">Strategic Vision</h4>
@@ -103,14 +103,14 @@
         </div>
 
         <!-- Call to Action -->
-        <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-12 text-white text-center">
+        <div class="bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-8 lg:p-12 text-white text-center">
           <h3 class="text-3xl font-bold mb-4">Ready to Become a Modern Automobile CEO?</h3>
           <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Read thoughtfully and apply all practical guidelines as you work towards becoming a successful Modern Automobile CEO.
           </p>
           <button 
             @click="$emit('preorder')"
-            class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center gap-3"
+            class="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center gap-3"
           >
             <span>Start Your Journey</span>
             <span class="font-bold">{{ price }}</span>

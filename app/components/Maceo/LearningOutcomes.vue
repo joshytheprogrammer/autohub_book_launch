@@ -86,7 +86,7 @@
           <div class="grid md:grid-cols-4 gap-8">
             <div v-for="(phase, index) in transformationPhases" :key="index" class="text-center">
               <div class="relative mb-6">
-                <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
+                <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-900 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
                   {{ index + 1 }}
                 </div>
                 <div v-if="index < transformationPhases.length - 1" class="hidden md:block absolute top-8 left-full w-full h-0.5 bg-blue-400/30"></div>

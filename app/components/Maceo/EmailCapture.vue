@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 lg:py-24 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
     <div class="container mx-auto px-6">
       <div class="max-w-2xl mx-auto text-center space-y-8">
         <div class="space-y-4">
@@ -29,7 +29,7 @@
           <button 
             type="submit" 
             :disabled="isSubmitting"
-            class="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg shadow-lg hover:bg-blue-50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 hover:shadow-xl"
+            class="px-8 py-4 bg-white text-blue-900 rounded-xl font-semibold text-lg shadow-lg hover:bg-blue-50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 hover:shadow-xl"
           >
             <span v-if="!isSubmitting">Notify Me</span>
             <span v-else class="flex items-center gap-2">
