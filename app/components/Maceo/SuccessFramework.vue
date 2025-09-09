@@ -141,7 +141,7 @@
             class="bg-white text-blue-900 hover:bg-blue-50 px-10 py-5 rounded-xl font-bold text-xl shadow-2xl hover:shadow-3xl transition-all duration-300 inline-flex items-center gap-4"
           >
             <span>Begin Your Transformation</span>
-            <span class="bg-blue-900 text-white px-4 py-2 rounded-lg">{{ price }}</span>
+            <span class="bg-blue-900 text-white hidden md:block px-4 py-2 rounded-lg">{{ price }}</span>
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
