@@ -97,7 +97,7 @@ const paystackConfig = {
 }
 
 const bookData = {
-  coverSrc: '/Book_cover.jpg',
+  coverSrc: '/Book_cover.png',
   title: 'Modern Automobile CEO',
   subtitle: 'The comprehensive blueprint for automotive industry leadership. Master land vehicles, maritime, aviation, AI integration, space exploration, and wealth creation strategies.',
   author: 'Chika Joel (J-ib)',

@@ -5,7 +5,7 @@
       <img 
         :src="book.cover" 
         :alt="book.title"
-        class="w-full max-h-72 object-cover"
+        class="w-full max-h-[300px] object-cover"
         loading="lazy"
       />
     </div>

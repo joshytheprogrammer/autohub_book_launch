@@ -3,7 +3,7 @@
     <img 
       :src="coverSrc" 
       :alt="alt" 
-      :class="['rounded-xl shadow-2xl object-cover transition-all duration-300 hover:shadow-3xl', customClass]"
+      :class="['rounded-xl object-cover transition-all duration-300 ', customClass]"
       loading="lazy"
     />
   </div>
