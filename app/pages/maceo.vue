@@ -99,9 +99,9 @@ const paystackConfig = {
 const bookData = {
   coverSrc: '/Book_cover.png',
   title: 'Modern Automobile CEO',
-  subtitle: 'The comprehensive blueprint for automotive industry leadership. Master land vehicles, maritime, aviation, AI integration, space exploration, and wealth creation strategies.',
+  subtitle: 'A comprehensive blueprint for what it takes to become a successful automotive CEO, covering land vehicles, maritime, aviation, AI, and space exploration..',
   author: 'Chika Joel (J-ib)',
-  price: '₦50,000',
+  price: '₦50,000 ($33)',
   features: [
     {
       icon: '�',

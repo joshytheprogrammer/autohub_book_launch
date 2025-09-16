@@ -8,7 +8,7 @@
             Why This Book Changes Everything
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            The automotive industry gap that inspired a revolutionary approach to business transformation
+            It is a gap filler! Its inspired revolutionary approach to the industry's transformation and growth in Africa is workable and practically demonstrated.
           </p>
         </div>
 
@@ -25,7 +25,7 @@
               <strong>"Everyone is comfortable with the buying and selling routine!"</strong>
             </p>
             <p class="text-red-700 mt-4">
-              Automobile entrepreneurs simply want to enrich themselves and retire without a plan for structure and transformation. This mindset has stagnated Africa's automotive industry and limited its global potential.
+              The automotive entrepreneurs simply want to enrich themselves and retire without a plan for structure and transformation. This mindset has stagnated Africa's automotive industry and limited its global potential.
             </p>
           </div>
 
@@ -60,7 +60,7 @@
               The MACEOS Solution
             </h3>
             <p class="text-green-800 text-lg leading-relaxed">
-              <strong>Transform the entire automotive ecosystem</strong> by developing Modern Automobile CEOs who understand the industry's nitty-gritty, evolution, and wealth creation opportunities.
+              Transform the entire automotive bionetwork by developing Modern Automotive CEOs who understand the industry's nitty-gritty, evolution, and wealth creation opportunities.
             </p>
           </div>
 

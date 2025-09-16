@@ -13,7 +13,7 @@
         </div>
 
         <!-- Main Content Grid -->
-        <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div class="grid lg:grid-cols-2 gap-12 items-center text-center mb-16">
           <!-- Text Content -->
           <div class="space-y-6">
             <div class="space-y-4">
@@ -21,18 +21,27 @@
                 The Industry Gap That Inspired This Book
               </h3>
               <p class="text-gray-600 leading-relaxed">
-                After years of participation in revolutionizing the automobile industry, a critical gap was discovered in Africa that has stagnated industry growth: 
-                <strong class="text-gray-900">Everyone is comfortable with the buying and selling routine!</strong>
+                A treasure trove for all aspiring and established automotive CEOs. It covers land vehicles, aviation, AI, space exploration, and maritime. A blend I termed “Mobility Industry”; an advanced mobility and aerospace technologies.
+
               </p>
               <p class="text-gray-600 leading-relaxed">
-                Automobile entrepreneurs simply want to enrich themselves and retire without a plan for structure and transformation. This book opens eyes to the industry's nitty-gritty, evolution, and wealth creation opportunities.
+                Its teachings are from the grassroots to the apex, covering key topics like measures to consider before venturing into the automotive industry, the scope of the industry, mechanism, modern technologies, structure, management, sales and marketing, automotive sectors, manufacturing, conglomerate building, the future of the industry, post-success, and so many other insightful topics that made this book a page-turner.
+
+              </p>
+              <p class="text-gray-600 leading-relaxed">
+                After reading this book, you will abhor the practice of the conventional automotive entrepreneurs whose ambitions are to enrich themselves and retire without a plan for structure and transformation. A routine that has left a critical gap in Africa's automotive industry and stagnated its growth.
+
+              </p>
+              <p class="text-gray-600 leading-relaxed">
+                This book x-rays the nitty-gritty, evolution, and wealth creation opportunities in the automotive industry.
+
               </p>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-xl">
               <h4 class="font-bold text-blue-900 mb-3">What is MACEOS?</h4>
               <p class="text-blue-800">
-                <strong>Modern Automobile CEOs</strong> is an initiative by Autohub Africa to develop Modern Automobile CEOs in Africa and around the world. This book serves as your blueprint for achieving success as an automobile CEO.
+                MACEOS, which stands for Modern Automotive CEOs, is an initiative by Autohub Africa to educate and develop Modern Automotive CEOs in Africa and around the world. Both the MACEOS book and the academy serve as a blueprint for achieving this goal
               </p>
             </div>
           </div>
@@ -40,7 +49,7 @@
           <!-- Visual/Stats -->
           <div class="space-y-6">
             <div class="bg-gray-50 p-8 rounded-2xl">
-              <h4 class="text-xl font-bold text-gray-900 mb-6 text-center">Industry Revolution Scope</h4>
+              <h4 class="text-xl font-bold text-gray-900 mb-6 text-center">The Industry's Classification</h4>
               <div class="grid grid-cols-2 gap-4">
                 <div class="text-center p-4 bg-white rounded-xl">
                   <div class="text-2xl mb-2">🚗</div>
@@ -56,7 +65,11 @@
                 </div>
                 <div class="text-center p-4 bg-white rounded-xl">
                   <div class="text-2xl mb-2">🚀</div>
-                  <div class="font-semibold text-gray-900">Space</div>
+                  <div class="font-semibold text-gray-900">Space Exploration</div>
+                </div>
+                <div class="text-center p-4 bg-white rounded-xl">
+                  <div class="text-2xl mb-2">🚀</div>
+                  <div class="font-semibold text-gray-900">Artificial Intelligence</div>
                 </div>
               </div>
             </div>
@@ -76,7 +89,7 @@
               </div>
               <h4 class="text-xl font-bold text-gray-900 mb-3">Strategic Vision</h4>
               <p class="text-gray-600">
-                Move beyond buying and selling to create structured transformation in the automotive industry
+                Move beyond buying and selling to creating a structured system that transforms the industry beyond the Third-World standard and aspiration.
               </p>
             </div>
 
@@ -86,7 +99,7 @@
               </div>
               <h4 class="text-xl font-bold text-gray-900 mb-3">Wealth Creation</h4>
               <p class="text-gray-600">
-                Learn proven strategies to create sustainable wealth while contributing positively to industry growth
+                Learn proven strategies to create sustainable wealth while contributing positively to industry growth.
               </p>
             </div>
 
@@ -106,7 +119,7 @@
         <div class="bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-8 lg:p-12 text-white text-center">
           <h3 class="text-3xl font-bold mb-4">Ready to Become a Modern Automobile CEO?</h3>
           <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Read thoughtfully and apply all practical guidelines as you work towards becoming a successful Modern Automobile CEO.
+            Read thoughtfully and apply all practical guidelines as you work towards becoming a successful Modern Automotive CEO.
           </p>
           <button 
             @click="$emit('preorder')"

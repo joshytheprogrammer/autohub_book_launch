@@ -47,7 +47,7 @@
 
               <div class="prose prose-lg text-gray-700 space-y-4">
                 <p>
-                  Chika Joel, known professionally as J-ib, is a distinguished thought leader at the intersection of traditional automotive industry and cutting-edge technological innovation. With over a decade of experience spanning multiple transportation domains, he brings a unique perspective to modern mobility challenges.
+                  An industry pragmatist and mobility innovation expert, who believes that with advanced automotive technology, humanity can explore the universe and beyond. Chika Joel, also known as J-ib, is a passionate industry innovator with over a decade of experience in the automotive industry, spanning from classified services to transportation, engineering, automotive product sales, and brand management. 
                 </p>
                 
                 <p>
@@ -55,7 +55,7 @@
                 </p>
 
                 <p>
-                  Throughout his career, Chika has worked with leading automotive manufacturers, technology startups, and government agencies to develop strategic frameworks for navigating industry transformation. His insights have been featured in major industry publications and conferences worldwide.
+                  Throughout his career, Chika Joel has documented everyday experiences, having worked with leading automotive companies, technology startups, and remotely with government agencies. This is all in an effort to develop strategic frameworks for the industry's transformation. His insights in revolutionizing the automotive industry have been an inspiration to the global automotive community.
                 </p>
               </div>
 
