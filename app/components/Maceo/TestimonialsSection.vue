@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+  <section id="reviews" class="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
         <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
