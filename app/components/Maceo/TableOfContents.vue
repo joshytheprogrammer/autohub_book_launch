@@ -63,16 +63,16 @@
 const chapters = [
   {
     title: "As A Beginner",
-    description: "Start your journey as a Modern Automobile CEO with essential foundations, qualifications, and industry entry strategies.",
+    description: "Start your journey as a Modern Automotive CEO with essential foundations, qualifications, and industry entry strategies.",
     keyTopics: ["Industry Entry", "Market Analysis", "Career Planning", "Reality Check"]
   },
   {
     title: "Understanding The Industry",
-    description: "Explore the complete scope of the automobile industry including aviation, maritime, AI, and space exploration sectors.",
+    description: "Explore the complete scope of the Automotive industry including aviation, maritime, AI, and space exploration sectors.",
     keyTopics: ["Industry Scope", "Market Statistics", "Future Trends", "Space Technology"]
   },
   {
-    title: "Automobile Mechanism",
+    title: "Automotive Mechanism",
     description: "Master the technical foundations of vehicle engines, transmissions, and all related automotive components.",
     keyTopics: ["Engine Systems", "Transmission", "Suspension", "Electrical Systems"]
   },
@@ -102,7 +102,7 @@ const chapters = [
     keyTopics: ["Strategic Partnerships", "Client Relations", "Government Relations", "International Networking"]
   },
   {
-    title: "Automobile Sector",
+    title: "Automotive Sector",
     description: "Discover additional automotive sectors and diversification opportunities beyond traditional vehicle sales.",
     keyTopics: ["Sector Diversification", "AI Integration", "Space Technology", "Electric Vehicles"]
   },

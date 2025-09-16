@@ -7,7 +7,7 @@
             About the Author
           </h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Meet the visionary leader behind "Modern Automobile CEO"
+            Meet the visionary leader behind "Modern Automotive CEO"
           </p>
         </div>
 

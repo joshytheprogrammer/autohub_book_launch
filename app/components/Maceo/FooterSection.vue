@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Book Info -->
         <div class="space-y-4">
-          <h3 class="text-xl font-bold text-white">Modern Automobile CEO</h3>
+          <h3 class="text-xl font-bold text-white">Modern Automotive CEO</h3>
           <p class="text-gray-400 leading-relaxed">
             By {{ author }} - A comprehensive guide to leadership in the evolving mobility industry.
           </p>

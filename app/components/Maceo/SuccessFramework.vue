@@ -117,7 +117,7 @@
         <div class="text-center bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-2xl p-8">
           <h3 class="text-3xl font-bold mb-6">Your Transformation Commitment</h3>
           <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            "Read thoughtfully and apply all practical guidelines as you work towards becoming a successful Modern Automobile CEO."
+            "Read thoughtfully and apply all practical guidelines as you work towards becoming a successful Modern Automotive CEO."
             <span class="block mt-4 text-blue-200 italic">- Chika Joel (J-ib)</span>
           </p>
           

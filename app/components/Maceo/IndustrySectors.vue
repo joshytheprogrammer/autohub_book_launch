@@ -104,7 +104,7 @@
 
         <!-- Future Vision -->
         <div class="mt-16 text-center">
-          <h3 class="text-3xl font-bold text-gray-900 mb-8">Your Future as a Modern Automobile CEO</h3>
+          <h3 class="text-3xl font-bold text-gray-900 mb-8">Your Future as a Modern Automotive CEO</h3>
           
           <div class="grid md:grid-cols-3 gap-8">
             <div class="p-6">
@@ -206,7 +206,7 @@ const emergingTechnologies = [
 const diversificationAreas = [
   {
     category: "Education & Training",
-    example: "Automobile academies, artisan licensing, and professional certification programs"
+    example: "Automotive academies, artisan licensing, and professional certification programs"
   },
   {
     category: "Digital Services",

@@ -8,7 +8,7 @@
             About MACEOS
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Modern Automobile CEOs - Revolutionizing Africa's Automotive Industry
+            Modern Automotive CEOs - Revolutionizing Africa's Automotive Industry
           </p>
         </div>
 
@@ -117,7 +117,7 @@
 
         <!-- Call to Action -->
         <div class="bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl p-8 lg:p-12 text-white text-center">
-          <h3 class="text-3xl font-bold mb-4">Ready to Become a Modern Automobile CEO?</h3>
+          <h3 class="text-3xl font-bold mb-4">Ready to Become a Modern Automotive CEO?</h3>
           <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Read thoughtfully and apply all practical guidelines as you work towards becoming a successful Modern Automotive CEO.
           </p>

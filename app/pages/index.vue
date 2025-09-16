@@ -87,7 +87,7 @@ const books = ref([
   {
     id: 1,
     slug: 'maceo',
-    title: 'Modern Automobile CEO',
+    title: 'Modern Automotive CEO',
     author: 'Chika Joel (J-ib)',
     price: '₦50,000',
     cover: '/Book_cover.jpg',

@@ -7,7 +7,7 @@
             Stay Updated on the Launch
           </h2>
           <p class="text-lg text-blue-100">
-            Be the first to know when "Modern Automobile CEO" is available. 
+            Be the first to know when "Modern Automotive CEO" is available. 
             Get exclusive early access and special launch pricing.
           </p>
         </div>
