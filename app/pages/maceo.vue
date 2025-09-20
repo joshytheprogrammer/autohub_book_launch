@@ -32,7 +32,7 @@
     <MaceoAboutAuthor :author="bookData.author" />
     <MaceoValueProp :price="bookData.price" @preorder="openPaymentModal" />
     <MaceoEmailCapture @email-captured="handleEmailCapture" />
-    <MaceoFooterSection :author="bookData.author" />
+    <!-- <MaceoFooterSection :author="bookData.author" /> -->
     
     <!-- Payment Modal -->
     <MaceoPaymentModal
@@ -99,7 +99,7 @@ const paystackConfig = {
 const bookData = {
   coverSrc: '/Book_cover.png',
   title: 'Modern Automotive CEO',
-  subtitle: 'A comprehensive blueprint for what it takes to become a successful automotive CEO, covering land vehicles, maritime, aviation, AI, and space exploration..',
+  subtitle: 'A comprehensive greenprint for what it takes to become a successful automotive CEO, covering land vehicles, maritime, aviation, AI, and space exploration..',
   author: 'Chika Joel (J-ib)',
   price: '₦50,000 ($33)',
   features: [

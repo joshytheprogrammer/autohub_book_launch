@@ -11,7 +11,7 @@
           <div class="flex space-x-4">
             <a 
               href="#" 
-              class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-900 transition-colors"
+              class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-900 transition-colors"
               aria-label="Twitter"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -20,7 +20,7 @@
             </a>
             <a 
               href="#" 
-              class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-900 transition-colors"
+              class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-900 transition-colors"
               aria-label="LinkedIn"
             >
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@
           <h4 class="text-lg font-semibold text-white">Get in Touch</h4>
           <div class="space-y-2">
             <p class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
               <span>info@autohubbooks.com</span>

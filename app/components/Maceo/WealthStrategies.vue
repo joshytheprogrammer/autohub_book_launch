@@ -43,7 +43,7 @@
 
           <div class="bg-white rounded-2xl p-8 shadow-lg">
             <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white text-2xl">
+              <div class="w-12 h-12 bg-green-900 rounded-xl flex items-center justify-center text-white text-2xl">
                 🏦
               </div>
               <h3 class="text-2xl font-bold text-gray-900">Banking & Financial Systems</h3>
@@ -58,7 +58,7 @@
                 <h4 class="font-semibold text-gray-900">Banking Mastery:</h4>
                 <ul class="space-y-2">
                   <li v-for="banking in bankingSkills" :key="banking" class="flex items-center gap-3">
-                    <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span class="text-gray-700">{{ banking }}</span>
@@ -95,18 +95,18 @@
         </div>
 
         <!-- Investment & Growth -->
-        <div class="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 lg:p-12 text-white mb-16">
+        <div class="bg-gradient-to-r from-gray-900 to-green-900 rounded-2xl p-8 lg:p-12 text-white mb-16">
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 class="text-3xl font-bold mb-6">Investment & Wealth Multiplication</h3>
-              <p class="text-blue-100 text-lg leading-relaxed mb-8">
+              <p class="text-green-100 text-lg leading-relaxed mb-8">
                 Learn advanced investment strategies that multiply your automotive business profits and create sustainable wealth streams across multiple sectors.
               </p>
               
               <div class="space-y-4">
                 <div v-for="investment in investmentStrategies" :key="investment.type" class="bg-white/10 p-4 rounded-xl">
-                  <h4 class="font-bold text-blue-200 mb-2">{{ investment.type }}</h4>
-                  <p class="text-blue-100 text-sm">{{ investment.strategy }}</p>
+                  <h4 class="font-bold text-green-200 mb-2">{{ investment.type }}</h4>
+                  <p class="text-green-100 text-sm">{{ investment.strategy }}</p>
                 </div>
               </div>
             </div>
@@ -116,15 +116,15 @@
                 <h4 class="text-xl font-bold mb-4 text-center">Wealth Growth Timeline</h4>
                 <div class="space-y-4">
                   <div class="flex justify-between items-center">
-                    <span class="text-blue-200">Year 1-2:</span>
+                    <span class="text-green-200">Year 1-2:</span>
                     <span class="font-bold text-green-300">Foundation Building</span>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="text-blue-200">Year 3-5:</span>
+                    <span class="text-green-200">Year 3-5:</span>
                     <span class="font-bold text-yellow-300">Rapid Expansion</span>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="text-blue-200">Year 5+:</span>
+                    <span class="text-green-200">Year 5+:</span>
                     <span class="font-bold text-purple-300">Conglomerate Status</span>
                   </div>
                 </div>
@@ -133,7 +133,7 @@
               <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
                 <h4 class="text-xl font-bold mb-4">Success Multiplier</h4>
                 <div class="text-5xl font-bold text-green-300 mb-2">10X</div>
-                <p class="text-blue-100 text-sm">Average wealth multiplication for dedicated students</p>
+                <p class="text-green-100 text-sm">Average wealth multiplication for dedicated students</p>
               </div>
             </div>
           </div>

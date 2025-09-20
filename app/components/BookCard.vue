@@ -1,29 +1,47 @@
 <template>
-  <div class="bg-white rounded-lg shadow-md border border-gray-200 cursor-pointer" @click="$emit('click')">
+  <div 
+    class="card card-hover cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-primary rounded-2xl"
+    @click="$emit('click')"
+    @keydown.enter="$emit('click')"
+    tabindex="0"
+    role="button"
+    :aria-label="`View details for ${book.title} by ${book.author}`"
+  >
     <!-- Book Cover -->
-    <div class="overflow-hidden rounded-t-lg">
+    <div class="overflow-hidden rounded-2xl -mt-6 -mx-6 mb-4">
       <img 
         :src="book.cover" 
-        :alt="book.title"
-        class="w-full max-h-[300px] object-cover"
+        :alt="`Cover of ${book.title}`"
+        class="w-full h-[300px] object-cover"
         loading="lazy"
       />
     </div>
 
-    <!-- Book Info -->
-    <div class="p-4">
-      <!-- Title & Author -->
-      <h3 class="text-lg font-bold text-gray-800 mb-1">{{ book.title }}</h3>
-      <p class="text-sm text-gray-600 mb-2">by {{ book.author }}</p>
+    <!-- Title & Author -->
+    <h3 class="h3 mb-1">{{ book.title }}</h3>
+    <p class="text-sm font-medium text-gray-600 mb-2">by {{ book.author }}</p>
 
-      <!-- Description -->
-      <p class="text-sm text-gray-700 mb-3 line-clamp-2">{{ book.description }}</p>
+    <!-- Categories -->
+    <div 
+      v-if="book.categories && book.categories.length" 
+      class="flex flex-wrap gap-2 mb-3"
+      aria-label="Book categories"
+    >
+      <span 
+        v-for="(category, i) in book.categories" 
+        :key="i" 
+        class="text-xs font-medium text-green-dark bg-green-light px-2 py-1 rounded-lg"
+      >
+        {{ category }}
+      </span>
+    </div>
 
-      <!-- Price & Action -->
-      <div class="flex items-center justify-between">
-        <div class="text-lg font-bold text-gray-900">{{ book.price }}</div>
-        <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm">{{ actionText }}</button>
-      </div>
+    <!-- Description -->
+    <p class="text-sm text-gray-600 mb-4 line-clamp-2">{{ book.description }}</p>
+
+    <!-- Price & Action -->
+    <div class="flex items-center justify-between pt-3 border-t border-gray-200 mt-3">
+      <div class="text-lg font-bold text-green-dark" aria-label="Price">{{ book.price }}</div>
     </div>
   </div>
 </template>
@@ -58,6 +76,7 @@ const actionText = computed(() => {
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

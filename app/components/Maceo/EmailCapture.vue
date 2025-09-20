@@ -1,12 +1,12 @@
 <template>
-  <section class="py-16 lg:py-24 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-green-dark to-emerald-accent text-white">
     <div class="container mx-auto px-6">
       <div class="max-w-2xl mx-auto text-center space-y-8">
         <div class="space-y-4">
           <h2 class="text-3xl lg:text-4xl font-bold">
             Stay Updated on the Launch
           </h2>
-          <p class="text-lg text-blue-100">
+          <p class="text-lg text-green-100">
             Be the first to know when "Modern Automotive CEO" is available. 
             Get exclusive early access and special launch pricing.
           </p>
@@ -22,14 +22,14 @@
               type="email" 
               required 
               placeholder="Enter your email address"
-              class="w-full px-6 py-4 text-gray-900 bg-white rounded-xl border-0 focus:ring-4 focus:ring-blue-300 focus:outline-none text-lg shadow-lg"
+              class="w-full px-6 py-4 text-gray-900 bg-white rounded-xl border-0 focus:ring-4 focus:ring-green-300 focus:outline-none text-lg shadow-lg"
               :disabled="isSubmitting"
             />
           </div>
           <button 
             type="submit" 
             :disabled="isSubmitting"
-            class="px-8 py-4 bg-white text-blue-900 rounded-xl font-semibold text-lg shadow-lg hover:bg-blue-50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 hover:shadow-xl"
+            class="px-8 py-4 bg-white text-green-900 rounded-xl font-semibold text-lg shadow-lg hover:bg-green-50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 hover:shadow-xl"
           >
             <span v-if="!isSubmitting">Notify Me</span>
             <span v-else class="flex items-center gap-2">
@@ -49,7 +49,7 @@
           <span>Thank you! We'll keep you updated.</span>
         </div>
         
-        <p class="text-sm text-blue-200">
+        <p class="text-sm text-green-200">
           🔒 We respect your privacy. No spam, unsubscribe anytime.
         </p>
       </div>

@@ -4,7 +4,7 @@
       <div class="text-4xl mb-4 hover:scale-110 transition-transform duration-300">
         {{ icon }}
       </div>
-      <h3 class="text-xl font-bold text-gray-900 hover:text-blue-900 transition-colors">
+      <h3 class="text-xl font-bold text-gray-900 hover:text-green-900 transition-colors">
         {{ title }}
       </h3>
       <p class="text-gray-600 leading-relaxed">

@@ -21,13 +21,13 @@
           >
             <div class="flex items-start gap-6">
               <div class="flex-shrink-0">
-                <div class="w-16 h-16 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-3xl group-hover:bg-blue-700 transition-colors">
+                <div class="w-16 h-16 bg-green-900 text-white rounded-2xl flex items-center justify-center text-3xl group-hover:bg-green-700 transition-colors">
                   {{ sector.icon }}
                 </div>
               </div>
               
               <div class="flex-1">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-900 transition-colors">
                   {{ sector.name }}
                 </h3>
                 <p class="text-gray-600 leading-relaxed mb-6">
@@ -60,28 +60,28 @@
             <div 
               v-for="tech in emergingTechnologies" 
               :key="tech.name"
-              class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl hover:from-blue-100 hover:to-blue-200 transition-all duration-300 cursor-pointer group"
+              class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl hover:from-green-100 hover:to-green-200 transition-all duration-300 cursor-pointer group"
             >
               <div class="text-3xl mb-4">{{ tech.icon }}</div>
-              <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-700">{{ tech.name }}</h4>
+              <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-green-700">{{ tech.name }}</h4>
               <p class="text-gray-600 text-sm">{{ tech.description }}</p>
             </div>
           </div>
         </div>
 
         <!-- Business Diversification -->
-        <div class="bg-gradient-to-r from-gray-900 to-blue-900 rounded-2xl p-8 lg:p-12 text-white">
+        <div class="bg-gradient-to-r from-gray-900 to-green-900 rounded-2xl p-8 lg:p-12 text-white">
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 class="text-3xl font-bold mb-6">Business Diversification Opportunities</h3>
-              <p class="text-blue-100 text-lg leading-relaxed mb-8">
+              <p class="text-green-100 text-lg leading-relaxed mb-8">
                 The automotive industry extends far beyond traditional vehicle sales. Learn how to identify and capitalize on multiple revenue streams across interconnected sectors.
               </p>
               
               <div class="space-y-4">
                 <div v-for="diversification in diversificationAreas" :key="diversification.category" class="bg-white/10 p-4 rounded-xl">
-                  <h4 class="font-bold text-blue-200 mb-2">{{ diversification.category }}</h4>
-                  <p class="text-blue-100 text-sm">{{ diversification.example }}</p>
+                  <h4 class="font-bold text-green-200 mb-2">{{ diversification.category }}</h4>
+                  <p class="text-green-100 text-sm">{{ diversification.example }}</p>
                 </div>
               </div>
             </div>
@@ -89,14 +89,14 @@
             <div class="space-y-6">
               <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
                 <h4 class="text-xl font-bold mb-4">Industry Growth Projection</h4>
-                <div class="text-4xl font-bold text-blue-300 mb-2">500%</div>
-                <p class="text-blue-100 text-sm">Expected growth in automotive AI and space sectors by 2030</p>
+                <div class="text-4xl font-bold text-green-300 mb-2">500%</div>
+                <p class="text-green-100 text-sm">Expected growth in automotive AI and space sectors by 2030</p>
               </div>
               
               <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
                 <h4 class="text-xl font-bold mb-4">Market Opportunity</h4>
                 <div class="text-4xl font-bold text-green-300 mb-2">$2T+</div>
-                <p class="text-blue-100 text-sm">Global automotive technology market size</p>
+                <p class="text-green-100 text-sm">Global automotive technology market size</p>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@
           
           <div class="grid md:grid-cols-3 gap-8">
             <div class="p-6">
-              <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">
+              <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">
                 🌟
               </div>
               <h4 class="text-xl font-bold text-gray-900 mb-3">Industry Leader</h4>

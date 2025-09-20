@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-blue-900 text-white py-16 lg:py-24">
+  <section class="bg-gradient-to-br from-green-dark to-emerald-accent text-white py-16 lg:py-24">
     <div class="container mx-auto px-6">
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
@@ -8,7 +8,7 @@
             <MaceoBookCover 
               :cover-src="coverSrc" 
               :alt="`${title} by ${author}`"
-              custom-class="w-64 h-80 lg:w-72 lg:h-96"
+              custom-class="w-64 h-80 lg:w-72 lg:h-96 shadow-xl"
             />
           </div>
           
@@ -19,21 +19,28 @@
                 <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
                   {{ title }}
                 </h1>
-                <p class="text-xl lg:text-2xl text-blue-100 font-light">
+                <p class="text-xl lg:text-2xl text-green-light font-medium">
                   by {{ author }}
                 </p>
               </div>
               
-              <p class="text-lg lg:text-xl text-blue-50 leading-relaxed max-w-2xl">
+              <p class="text-lg lg:text-xl text-white leading-relaxed max-w-2xl opacity-90">
                 {{ subtitle }}
               </p>
-              <div class="text-sm text-blue-200 space-y-1">
-                <p>✨ Early bird pricing</p>
-                <p>📚 Digital + Physical copy</p>
+              <div class="text-sm text-green-light space-y-2">
+                <p class="flex items-center gap-2">
+                  <span class="flex h-5 w-5 rounded-full bg-green-primary items-center justify-center">✨</span>
+                  Early bird pricing
+                </p>
+                <p class="flex items-center gap-2">
+                  <span class="flex h-5 w-5 rounded-full bg-green-primary items-center justify-center">📚</span>
+                  Digital + Physical copy
+                </p>
               </div>
               <button 
                 @click="$emit('preorder')"
-                class="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center lg:mx-0 mx-auto gap-3"
+                class="bg-white text-green-dark hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center lg:mx-0 mx-auto gap-3 focus:outline-none focus:ring-2 focus:ring-green-light focus:ring-opacity-50"
+                aria-label="Preorder the book"
               >
                 <span>Preorder Now</span>
                 <span class="font-bold">{{ price }}</span>
