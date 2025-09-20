@@ -41,7 +41,7 @@
             <div class="bg-green-50 p-6 rounded-xl">
               <h4 class="font-bold text-green-900 mb-3">What is MACEOS?</h4>
               <p class="text-green-800">
-                MACEOS, which stands for Modern Automotive CEOs, is an initiative by Autohub Africa to educate and develop Modern Automotive CEOs in Africa and around the world. Both the MACEOS book and the academy serve as a greenprint for achieving this goal
+                MACEOS, which stands for Modern Automotive CEOs, is an initiative by Autohub Africa to educate and develop Modern Automotive CEOs in Africa and around the world. Both the MACEOS book and the academy serve as a blueprint for achieving this goal
               </p>
             </div>
           </div>

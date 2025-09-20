@@ -99,7 +99,7 @@ const paystackConfig = {
 const bookData = {
   coverSrc: '/Book_cover.png',
   title: 'Modern Automotive CEO',
-  subtitle: 'A comprehensive greenprint for what it takes to become a successful automotive CEO, covering land vehicles, maritime, aviation, AI, and space exploration..',
+  subtitle: 'A comprehensive blueprint for what it takes to become a successful automotive CEO, covering land vehicles, maritime, aviation, AI, and space exploration..',
   author: 'Chika Joel (J-ib)',
   price: '₦50,000 ($33)',
   features: [
@@ -151,6 +151,18 @@ const bookData = {
       name: 'Prof. Aisha Danladi',
       role: 'Transportation & Innovation Scholar, UNILAG',
       content: 'Chika Joel has written a masterpiece that connects Nigeria’s auto industry with the future of mobility and emerging technologies. A must-read for serious entrepreneurs.',
+      rating: 5
+    },
+    {
+      name: 'Emeka Nwosu',
+      role: 'Automotive Engineer, Enugu',
+      content: 'This book is a game changer for anyone serious about the automotive industry in Nigeria. The practical insights and strategies are unmatched.',
+      rating: 5
+    },
+    {
+      name: 'Fatima Bello',
+      role: 'Mobility Startup Founder, Kano',
+      content: 'Modern Automotive CEO gave me the confidence to scale my business and explore new technologies. Highly recommended for entrepreneurs.',
       rating: 5
     },
     {
