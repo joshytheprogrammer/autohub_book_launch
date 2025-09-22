@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 lg:py-24 bg-gradient-to-br from-green-900 via-purple-900 to-green-900 text-white">
+  <section class="py-16 lg:py-24 bg-gradient-to-br from-green-900 via-green-900 to-green-900 text-white">
     <div class="container mx-auto px-6">
       <div class="max-w-6xl mx-auto">
         <!-- Header -->
@@ -20,7 +20,7 @@
             class="text-center group"
           >
             <div class="relative mb-6">
-              <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-purple-500 rounded-full flex items-center justify-center mx-auto text-2xl font-bold mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto text-2xl font-bold mb-4 group-hover:scale-110 transition-transform duration-300">
                 {{ index + 1 }}
               </div>
               <div v-if="index < successPhases.length - 1" class="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-green-400/30"></div>
@@ -86,7 +86,7 @@
               </div>
               
               <div class="text-center p-4 bg-white/10 rounded-xl">
-                <div class="text-3xl font-bold text-purple-300 mb-2">45%</div>
+                <div class="text-3xl font-bold text-green-300 mb-2">45%</div>
                 <div class="text-green-100 text-sm">Scale to multiple automotive sectors</div>
               </div>
             </div>
@@ -131,7 +131,7 @@
               <div class="text-green-100 text-sm">Put practical strategies into immediate action</div>
             </div>
             <div class="text-center">
-              <div class="text-2xl font-bold text-purple-300 mb-2">Transformation</div>
+              <div class="text-2xl font-bold text-green-300 mb-2">Transformation</div>
               <div class="text-green-100 text-sm">Evolve from entrepreneur to industry leader</div>
             </div>
           </div>

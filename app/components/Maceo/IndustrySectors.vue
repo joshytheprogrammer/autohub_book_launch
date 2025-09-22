@@ -128,7 +128,7 @@
             </div>
             
             <div class="p-6">
-              <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">
+              <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl">
                 🌍
               </div>
               <h4 class="text-xl font-bold text-gray-900 mb-3">Global Impact</h4>

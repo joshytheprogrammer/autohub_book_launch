@@ -84,7 +84,7 @@
               <h4 class="text-2xl font-bold text-gray-900">Unique Differentiators</h4>
               <div class="space-y-4">
                 <div v-for="differentiator in differentiators" :key="differentiator.title" class="flex gap-4">
-                  <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                  <div class="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                     ★
                   </div>
                   <div>
@@ -98,7 +98,7 @@
         </div>
 
         <!-- The Impact -->
-        <div class="bg-gradient-to-r from-green-900 to-purple-600 rounded-2xl p-8 lg:p-12 text-white">
+        <div class="bg-gradient-to-r from-green-900 to-green-600 rounded-2xl p-8 lg:p-12 text-white">
           <div class="text-center mb-12">
             <h3 class="text-3xl font-bold mb-4">The Transformational Impact</h3>
             <p class="text-xl text-green-100 max-w-3xl mx-auto">

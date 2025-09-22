@@ -81,10 +81,10 @@
               :key="strategy.name"
               class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group text-center"
             >
-              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl group-hover:scale-110 transition-transform">
+              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl group-hover:scale-110 transition-transform">
                 {{ strategy.icon }}
               </div>
-              <h4 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+              <h4 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">
                 {{ strategy.name }}
               </h4>
               <p class="text-gray-600 text-sm leading-relaxed">
@@ -125,7 +125,7 @@
                   </div>
                   <div class="flex justify-between items-center">
                     <span class="text-green-200">Year 5+:</span>
-                    <span class="font-bold text-purple-300">Conglomerate Status</span>
+                    <span class="font-bold text-green-300">Conglomerate Status</span>
                   </div>
                 </div>
               </div>

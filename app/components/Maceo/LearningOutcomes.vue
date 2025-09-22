@@ -65,7 +65,7 @@
           <!-- Market Strategy -->
           <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
             <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center text-2xl">
+              <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center text-2xl">
                 📈
               </div>
               <h3 class="text-2xl font-bold">Market Strategy & Relationship Building</h3>
@@ -73,7 +73,7 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div v-for="skill in marketStrategy" :key="skill" class="bg-white/5 p-4 rounded-xl">
-                <span class="text-purple-200">{{ skill }}</span>
+                <span class="text-green-200">{{ skill }}</span>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@
         </div>
 
         <!-- Success Metrics -->
-        <div class="mt-16 bg-gradient-to-r from-green-500/20 to-purple-500/20 rounded-2xl p-8 text-center">
+        <div class="mt-16 bg-gradient-to-r from-green-500/20 to-green-500/20 rounded-2xl p-8 text-center">
           <h3 class="text-2xl font-bold mb-6">Success Outcomes</h3>
           <div class="grid md:grid-cols-3 gap-8">
             <div>
@@ -110,7 +110,7 @@
               <div class="text-green-100">Comprehensive Business Sectors</div>
             </div>
             <div>
-              <div class="text-3xl font-bold text-purple-300 mb-2">∞</div>
+              <div class="text-3xl font-bold text-green-300 mb-2">∞</div>
               <div class="text-green-100">Unlimited Growth Potential</div>
             </div>
           </div>
