@@ -17,14 +17,12 @@
             <div class="relative">
               <div class="aspect-[4/5] bg-gradient-to-br from-green-100 to-indigo-100 rounded-2xl overflow-hidden">
                 <!-- Placeholder for author image -->
-                <div class="w-full h-full flex items-center justify-center">
-                  <div class="text-center">
-                    <div class="w-32 h-32 bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span class="text-4xl font-bold text-white">CJ</span>
-                    </div>
-                    <p class="text-gray-600 text-sm">Author Photo Coming Soon</p>
-                  </div>
-                </div>
+                <img 
+                  src="/jib.PNG" 
+                  alt="Chika Joel (J-ib)" 
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
               
               <!-- Decorative elements -->
