@@ -102,7 +102,7 @@ const books = ref([
     title: 'Modern Automotive CEO',
     author: 'Chika Joel (J-ib)',
     price: '₦50,000',
-    cover: '/Book_cover.jpg',
+    cover: '/bookcovers/Book_cover.jpg',
     description: 'The definitive guide to leadership in the evolving automotive industry. From Land Vehicles to Maritime, Aviation, Space Exploration, and AI integration.',
     categories: ['Leadership', 'Automotive', 'Technology', 'Innovation'],
     status: 'preorder', // preorder, available, coming-soon
