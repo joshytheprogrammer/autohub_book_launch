@@ -64,11 +64,9 @@ import { ref, onMounted, onUnmounted } from 'vue';
 // Fixed book images - using the same image 5 times as placeholder
 // In a real implementation, you would use 5 different images
 const bookImages = [
-  '/bookcovers/Book_cover.png',
   '/bookcovers/1758548610.png',
   '/bookcovers/1758548746.png',
   '/bookcovers/1758549470.png',
-  '/bookcovers/Book_cover.jpg',
   '/bookcovers/mock-00054.png'
 ];
 
