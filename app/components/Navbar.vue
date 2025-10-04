@@ -3,10 +3,10 @@
     <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
-        <NuxtLink to="/" class="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-green-primary rounded-lg">
+        <a href="https://autohub.africa" class="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-green-primary rounded-lg">
           <img src="https://autohub.africa/logo.png" alt="AutoHub" class="h-8">
           <span class="sr-only">AutoHub Home</span>
-        </NuxtLink>
+        </a>
 
         <!-- Navigation Links -->
         <div class="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main Navigation">
