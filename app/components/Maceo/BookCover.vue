@@ -88,7 +88,7 @@ onMounted(() => {
   // Start the auto-rotation
   slideInterval = setInterval(() => {
     nextSlide();
-  }, 5000);
+  }, 3000);
 });
 
 onUnmounted(() => {
