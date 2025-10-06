@@ -149,7 +149,7 @@
                       <svg class="w-5 h-5 text-green-900 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                       </svg>
-                      <span class="text-gray-700">info@autohubbooks.com</span>
+                      <span class="text-gray-700">info@autohub.africa</span>
                     </div>
                     <div class="flex items-center gap-3">
                       <svg class="w-5 h-5 text-green-900 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -167,7 +167,7 @@
                       <svg class="w-5 h-5 text-green-900 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                       </svg>
-                      <span class="text-gray-700">authors@autohubbooks.com</span>
+                      <span class="text-gray-700">chikajoel@autohub.africa</span>
                     </div>
                     <p class="text-sm text-gray-600 ml-8">
                       Interested in publishing with us? We're always looking for industry experts with compelling insights to share.
