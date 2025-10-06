@@ -31,6 +31,13 @@
           >
             Contact
           </NuxtLink>
+          <a 
+            href="https://autohub.africa" 
+            class="text-gray-600 hover:text-green-primary font-medium transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-green-primary rounded-lg px-3 py-2"
+            :class="{ 'text-green-dark font-semibold': $route.path === '/contact' }"
+          >
+            Back to Marketplace
+        </a>
         </div>
 
         <!-- Mobile menu button -->
