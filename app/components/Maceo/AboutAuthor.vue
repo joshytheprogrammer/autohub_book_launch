@@ -18,7 +18,7 @@
               <div class="aspect-[4/5] bg-gradient-to-br from-green-100 to-indigo-100 rounded-2xl overflow-hidden">
                 <!-- Placeholder for author image -->
                 <img 
-                  src="https://res.cloudinary.com/dsgvwxygr/image/upload/v1758746446/jib_wduy54.png" 
+                  src="/maceo_author.jpg" 
                   alt="Chika Joel (J-ib)" 
                   class="w-full h-full object-cover"
                   loading="lazy"
