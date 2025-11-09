@@ -136,6 +136,19 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Error Message -->
+              <div v-if="showError" class="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                <div class="flex items-center gap-3">
+                  <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                  <div>
+                    <p class="font-medium text-red-800">Failed to send message</p>
+                    <p class="text-sm text-red-600">{{ errorMessage }}</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- Contact Information -->
@@ -193,7 +206,7 @@
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                       </svg>
                     </a>
-                    <a href="https://www.tiktok.com/@lovej_jib" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-green-900 hover:bg-green-700 text-white rounded-full flex items-center justify-center transition-colors" aria-label="Follow us on TikTok">
+                    <a href="https://www.tiktok.com/@lovej_ib" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-green-900 hover:bg-green-700 text-white rounded-full flex items-center justify-center transition-colors" aria-label="Follow us on TikTok">
                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                       </svg>
@@ -239,15 +252,27 @@ const form = ref({
 
 const isSubmitting = ref(false)
 const showSuccess = ref(false)
+const showError = ref(false)
+const errorMessage = ref('')
 
 async function submitForm() {
   isSubmitting.value = true
+  showError.value = false
   
   try {
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    const response = await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        firstName: form.value.firstName,
+        lastName: form.value.lastName,
+        email: form.value.email,
+        subject: form.value.subject,
+        message: form.value.message,
+        newsletter: form.value.newsletter
+      }
+    })
     
-    // Reset form
+    // Reset form on success
     form.value = {
       firstName: '',
       lastName: '',
@@ -266,7 +291,13 @@ async function submitForm() {
     
   } catch (error) {
     console.error('Form submission error:', error)
-    // Handle error (you could show an error message here)
+    showError.value = true
+    errorMessage.value = error.data?.error || 'Failed to send message. Please try again.'
+    
+    // Hide error message after 5 seconds
+    setTimeout(() => {
+      showError.value = false
+    }, 5000)
   } finally {
     isSubmitting.value = false
   }

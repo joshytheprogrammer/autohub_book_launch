@@ -28,7 +28,7 @@
       <div class="p-6">
         <!-- Book Info -->
         <div class="flex items-center gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
-          <img :src="bookCover" :alt="bookTitle" class="w-16 h-20 object-cover rounded-lg shadow-md">
+          <img src="/bookcovers/mock-00054.png" :alt="bookTitle" class="w-16 h-20 object-cover rounded-lg shadow-md">
           <div>
             <h3 class="font-semibold text-gray-900">{{ bookTitle }}</h3>
             <p class="text-sm text-gray-600">by {{ author }}</p>
