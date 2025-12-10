@@ -6,8 +6,9 @@ export default defineNuxtConfig({
   
   runtimeConfig: {
     public: {
-      paystackPublicKey: process.env.NUXT_PUBLIC_PAYSTACK_PUBLIC_KEY || 'pk_test_ad760fa83f741d21c2fa45eb704a6ceba29cbbd9'
-    }
+      paystackPublicKey: process.env.NUXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
+    },
+    paystackSecretKey: process.env.NUXT_PAYSTACK_SECRET_KEY
   },
   
   app: {

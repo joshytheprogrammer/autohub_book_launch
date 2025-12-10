@@ -18,6 +18,13 @@
             Books
           </NuxtLink>
           <NuxtLink 
+            to="/storefront" 
+            class="text-gray-600 hover:text-green-primary font-medium transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-green-primary rounded-lg px-3 py-2"
+            :class="{ 'text-green-dark font-semibold': $route.path === '/storefront' }"
+          >
+            Digital Store
+          </NuxtLink>
+          <NuxtLink 
             to="/about" 
             class="text-gray-600 hover:text-green-primary font-medium transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-green-primary rounded-lg px-3 py-2"
             :class="{ 'text-green-dark font-semibold': $route.path === '/about' }"
@@ -73,6 +80,15 @@
             role="menuitem"
           >
             Books
+          </NuxtLink>
+          <NuxtLink 
+            to="/storefront" 
+            @click="isMobileMenuOpen = false"
+            class="text-gray-600 hover:text-green-primary font-medium transition-colors px-3 py-2 rounded-xl hover:bg-green-light focus:outline-none focus:ring-2 focus:ring-green-primary"
+            :class="{ 'text-green-dark font-semibold bg-green-light': $route.path === '/storefront' }"
+            role="menuitem"
+          >
+            Digital Store
           </NuxtLink>
           <NuxtLink 
             to="/about" 

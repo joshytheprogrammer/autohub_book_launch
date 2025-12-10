@@ -24,6 +24,7 @@
             <h4 class="h4 mb-4">Quick Links</h4>
             <ul class="space-y-2 text-sm">
               <li><NuxtLink to="/" class="text-gray-600 hover:text-green-primary transition-colors">Home</NuxtLink></li>
+              <li><NuxtLink to="/storefront" class="text-gray-600 hover:text-green-primary transition-colors">Digital Store</NuxtLink></li>
               <li><NuxtLink to="/about" class="text-gray-600 hover:text-green-primary transition-colors">About</NuxtLink></li>
               <li><NuxtLink to="/contact" class="text-gray-600 hover:text-green-primary transition-colors">Contact</NuxtLink></li>
             </ul>
