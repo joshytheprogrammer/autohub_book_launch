@@ -225,23 +225,23 @@ const products = ref([
       'Download up to 3 times'
     ]
   },
-  {
-    id: 'autohub-magazine-digital',
-    name: 'AutoHub Magazine (Digital)',
-    description: 'The premier automotive industry magazine featuring latest trends, innovations, insights, and expert analysis from industry leaders.',
-    price: 10000,
-    priceDisplay: '₦10,000',
-    currency: 'NGN',
-    type: 'magazine',
-    fileName: 'AutoHub_Magazine.pdf',
-    coverImage: '/bookcovers/mock-00054.png',
-    author: 'AutoHub Editorial Team',
-    features: [
-      'Instant digital download',
-      'PDF format',
-      'Lifetime access',
-      'Download up to 3 times'
-    ]
-  }
+  // {
+  //   id: 'autohub-magazine-digital',
+  //   name: 'AutoHub Magazine (Digital)',
+  //   description: 'The premier automotive industry magazine featuring latest trends, innovations, insights, and expert analysis from industry leaders.',
+  //   price: 10000,
+  //   priceDisplay: '₦10,000',
+  //   currency: 'NGN',
+  //   type: 'magazine',
+  //   fileName: 'AutoHub_Magazine.pdf',
+  //   coverImage: '/bookcovers/mag-cover.png',
+  //   author: 'AutoHub Editorial Team',
+  //   features: [
+  //     'Instant digital download',
+  //     'PDF format',
+  //     'Lifetime access',
+  //     'Download up to 3 times'
+  //   ]
+  // }
 ])
 </script>
