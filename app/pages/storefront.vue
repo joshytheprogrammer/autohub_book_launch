@@ -211,7 +211,7 @@ const products = ref([
     id: 'maceo-digital',
     name: 'Modern Automotive CEO (Digital)',
     description: 'The definitive guide to leadership in the evolving automotive industry. From Land Vehicles to Maritime, Aviation, Space Exploration, and AI integration.',
-    price: 10000,
+    price: 200,
     priceDisplay: '₦10,000',
     currency: 'NGN',
     type: 'ebook',
