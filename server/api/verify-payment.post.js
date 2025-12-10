@@ -67,8 +67,8 @@ export default defineEventHandler(async (event) => {
     }
 
     // Verify the amount matches expected product price (in kobo)
-    // const expectedAmount = product.price * 100
-    const expectedAmount = 200 * 100
+    const expectedAmount = product.price * 100
+    
     if (verifyData.data.amount !== expectedAmount) {
       console.error('Amount mismatch:', { expected: expectedAmount, received: verifyData.data.amount })
       return {
