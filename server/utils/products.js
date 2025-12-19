@@ -4,8 +4,8 @@ export const digitalProducts = {
     id: 'maceo-digital',
     name: 'Modern Automotive CEO (Digital)',
     description: 'The definitive guide to leadership in the evolving automotive industry. Digital PDF download.',
-    price: 10000, // Price in Naira
-    priceDisplay: '₦10,000',
+    price: 50000, // Price in Naira
+    priceDisplay: '₦50,000',
     currency: 'NGN',
     type: 'ebook',
     fileName: 'Modern_Automotive_CEO.pdf',
@@ -23,8 +23,8 @@ export const digitalProducts = {
     id: 'autohub-magazine-digital',
     name: 'AutoHub Magazine (Digital)',
     description: 'The premier automotive industry magazine featuring latest trends, innovations, and insights.',
-    price: 10000, // Price in Naira
-    priceDisplay: '₦10,000',
+    price: 50000, // Price in Naira
+    priceDisplay: '₦50,000',
     currency: 'NGN',
     type: 'magazine',
     fileName: 'AutoHub_Magazine.pdf',
