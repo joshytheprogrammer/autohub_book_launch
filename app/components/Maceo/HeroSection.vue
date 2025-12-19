@@ -26,7 +26,7 @@
               <div class="text-sm text-green-light space-y-2">
                 <p class="flex items-center gap-2">
                   <span class="flex h-5 w-5 rounded-full bg-green-primary items-center justify-center">✨</span>
-                  Early bird pricing
+                  Available Now
                 </p>
                 <p class="flex items-center gap-2">
                   <span class="flex h-5 w-5 rounded-full bg-green-primary items-center justify-center">📚</span>
@@ -36,9 +36,9 @@
               <button 
                 @click="$emit('preorder')"
                 class="bg-white text-green-dark hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center lg:mx-0 mx-auto gap-3 focus:outline-none focus:ring-2 focus:ring-green-light focus:ring-opacity-50"
-                aria-label="Preorder the book"
+                aria-label="Order the book"
               >
-                <span>Preorder Now</span>
+                <span>Order Now</span>
                 <span class="font-bold">{{ price }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>

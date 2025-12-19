@@ -38,7 +38,7 @@
         
         <!-- Payment Form -->
         <form @submit.prevent="processPayment" class="space-y-4" aria-describedby="payment-instructions">
-          <p id="payment-instructions" class="sr-only">Please fill in the form below to complete your book preorder.</p>
+          <p id="payment-instructions" class="sr-only">Please fill in the form below to complete your book order.</p>
           
           <div>
             <label for="email" class="block text-sm font-medium text-gray-700 mb-2">

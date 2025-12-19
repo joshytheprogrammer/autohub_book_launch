@@ -23,7 +23,7 @@
 const props = defineProps({
   text: {
     type: String,
-    default: 'Preorder Now'
+    default: 'Order Now'
   },
   price: String,
   disabled: {

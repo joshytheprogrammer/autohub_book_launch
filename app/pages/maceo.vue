@@ -6,51 +6,50 @@
       :subtitle="bookData.subtitle"
       :author="bookData.author"
       :price="bookData.price"
-      @preorder="openPaymentModal"
+      @preorder="openOrderModal"
     />
     <MaceoProgramOverview 
       :price="bookData.price" 
-      @preorder="openPaymentModal" 
+      @preorder="openOrderModal" 
     />
     <MaceoWhyThisMatters 
       :price="bookData.price" 
-      @preorder="openPaymentModal" 
+      @preorder="openOrderModal" 
     />
     <MaceoTableOfContents />
     <MaceoLearningOutcomes />
     <MaceoIndustrySectors />
     <MaceoWealthStrategies 
       :price="bookData.price" 
-      @preorder="openPaymentModal" 
+      @preorder="openOrderModal" 
     />
     <MaceoSuccessFramework 
       :price="bookData.price" 
-      @preorder="openPaymentModal" 
+      @preorder="openOrderModal" 
     />
     <MaceoFeaturesSection :features="bookData.features" />
     <MaceoTestimonialsSection :testimonials="bookData.testimonials" />
     <MaceoAboutAuthor :author="bookData.author" />
-    <MaceoValueProp :price="bookData.price" @preorder="openPaymentModal" />
+    <MaceoValueProp :price="bookData.price" @preorder="openOrderModal" />
     <MaceoEmailCapture @email-captured="handleEmailCapture" />
     <!-- <MaceoFooterSection :author="bookData.author" /> -->
     
-    <!-- Payment Modal -->
-    <MaceoPaymentModal
-      :is-open="isPaymentModalOpen"
+    <!-- Order Modal (Pay on Delivery) -->
+    <MaceoOrderModal
+      :is-open="isOrderModalOpen"
       :book-title="bookData.title"
       :author="bookData.author"
       :price="bookData.price"
       :book-cover="bookData.coverSrc"
-      :paystack-key="paystackConfig.publicKey"
-      @close="closePaymentModal"
-      @payment-success="handlePaymentSuccess"
-      @payment-error="handlePaymentError"
+      @close="closeOrderModal"
+      @order-success="handleOrderSuccess"
+      @order-error="handleOrderError"
     />
     
     <!-- Success Modal -->
-    <MaceoPaymentSuccess
+    <MaceoOrderSuccess
       :is-visible="isSuccessModalOpen"
-      :payment-data="paymentData"
+      :order-data="orderData"
       @close="closeSuccessModal"
     />
     
@@ -61,7 +60,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
         <div>
-          <p class="font-semibold">Payment Error</p>
+          <p class="font-semibold">Order Error</p>
           <p class="text-sm">{{ errorMessage }}</p>
         </div>
         <button @click="errorMessage = ''" class="text-white hover:text-gray-200">
@@ -75,29 +74,41 @@
 </template>
 
 <script setup>
-import { usePayment } from '../composables/usePayment'
+// Order state management (Pay on Delivery)
+const isOrderModalOpen = ref(false)
+const isSuccessModalOpen = ref(false)
+const orderData = ref({})
+const errorMessage = ref('')
 
-// Payment system
-const {
-  isPaymentModalOpen,
-  isSuccessModalOpen,
-  paymentData,
-  errorMessage,
-  openPaymentModal,
-  closePaymentModal,
-  handlePaymentSuccess,
-  handlePaymentError,
-  closeSuccessModal
-} = usePayment()
+// Order modal functions
+function openOrderModal() {
+  isOrderModalOpen.value = true
+}
 
-// Paystack configuration
-const runtimeConfig = useRuntimeConfig()
-const paystackConfig = {
-  publicKey: runtimeConfig.public.paystackPublicKey
+function closeOrderModal() {
+  isOrderModalOpen.value = false
+}
+
+function handleOrderSuccess(data) {
+  isOrderModalOpen.value = false
+  orderData.value = data
+  isSuccessModalOpen.value = true
+}
+
+function handleOrderError(error) {
+  errorMessage.value = error
+  setTimeout(() => {
+    errorMessage.value = ''
+  }, 5000)
+}
+
+function closeSuccessModal() {
+  isSuccessModalOpen.value = false
+  orderData.value = {}
 }
 
 const bookData = {
-  coverSrc: '/Book_cover.png',
+  coverSrc: '/bookcovers/mock-00054.png',
   title: 'Modern Automotive CEO',
   subtitle: 'A comprehensive blueprint for what it takes to become a successful automotive CEO, covering land vehicles, maritime, aviation, AI, and space exploration..',
   author: 'Chika Joel (J-ib)',

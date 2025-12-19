@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         { name: 'keywords', content: 'automobile, CEO, leadership, automotive industry, mobility, AI, space exploration, maritime, aviation' },
         { property: 'og:title', content: 'Modern Automobile CEO by Chika Joel' },
         { property: 'og:description', content: 'The definitive guide to leadership in the evolving automotive industry.' },
-        { property: 'og:image', content: '/Book_cover.png' },
+        { property: 'og:image', content: '/bookcovers/mock-00054.png' },
         { property: 'og:type', content: 'book' }
       ],
       script: [

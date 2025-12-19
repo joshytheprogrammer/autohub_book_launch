@@ -17,8 +17,13 @@
       />
       <!-- Badge -->
       <div class="absolute top-3 left-3">
-        <span class="bg-green-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
-          Digital Download
+        <span 
+          :class="[
+            'text-white text-xs font-semibold px-3 py-1 rounded-full',
+            product.isPhysical ? 'bg-amber-500' : 'bg-green-primary'
+          ]"
+        >
+          {{ product.isPhysical ? 'Physical Copy' : 'Digital Download' }}
         </span>
       </div>
     </div>
@@ -50,12 +55,16 @@
       <div class="flex items-center justify-between pt-3 border-t border-gray-100">
         <div>
           <span class="text-2xl font-bold text-green-dark">{{ product.priceDisplay }}</span>
+          <span v-if="product.isPhysical" class="block text-xs text-amber-600 font-medium">Pay on Delivery</span>
         </div>
         <button 
-          class="btn btn-primary py-2 px-4 text-sm"
+          :class="[
+            'btn py-2 px-4 text-sm',
+            product.isPhysical ? 'bg-amber-500 hover:bg-amber-600 text-white' : 'btn-primary'
+          ]"
           @click.stop="$emit('purchase', product)"
         >
-          Buy Now
+          {{ product.isPhysical ? 'Order Now' : 'Buy Now' }}
         </button>
       </div>
     </div>
