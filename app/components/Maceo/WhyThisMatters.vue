@@ -133,16 +133,28 @@
           </div>
 
           <div class="text-center mt-12">
-            <button 
-              @click="$emit('preorder')"
-              class="bg-white text-green-900 hover:bg-green-50 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center gap-3"
-            >
-              <span>Join The Transformation</span>
-              <span class="font-bold">{{ price }}</span>
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-              </svg>
-            </button>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+              <button 
+                @click="$emit('order-digital')"
+                class="bg-white text-green-900 hover:bg-green-50 px-6 py-4 rounded-xl font-semibold text-base shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                <span>Digital Copy</span>
+                <span class="font-bold">{{ price }}</span>
+              </button>
+              <button 
+                @click="$emit('order-physical')"
+                class="bg-transparent border-2 border-white text-white hover:bg-white/10 px-6 py-4 rounded-xl font-semibold text-base transition-all duration-300 inline-flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                </svg>
+                <span>Physical Copy</span>
+                <span class="font-bold">{{ price }}</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -158,7 +170,7 @@ defineProps({
   }
 })
 
-defineEmits(['preorder'])
+defineEmits(['order-digital', 'order-physical'])
 
 const revolutionaryApproaches = [
   {

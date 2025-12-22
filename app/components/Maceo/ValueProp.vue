@@ -46,14 +46,30 @@
         
         <!-- Call to Action -->
         <div class="mt-12">
-          <MaceoPreorderButton 
-            text="Get Your Copy Now"
-            :price="price"
-            custom-class="mx-auto"
-            @click="$emit('preorder')"
-          />
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <button 
+              @click="$emit('order-digital')"
+              class="bg-green-primary hover:bg-green-dark text-white px-6 py-4 rounded-xl font-semibold text-base shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center justify-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              </svg>
+              <span>Digital Copy</span>
+              <span class="font-bold">{{ price }}</span>
+            </button>
+            <button 
+              @click="$emit('order-physical')"
+              class="bg-transparent border-2 border-green-primary text-green-dark hover:bg-green-50 px-6 py-4 rounded-xl font-semibold text-base transition-all duration-300 inline-flex items-center justify-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+              </svg>
+              <span>Physical Copy</span>
+              <span class="font-bold">{{ price }}</span>
+            </button>
+          </div>
           <p class="text-sm text-gray-500 mt-3 text-center">
-            📦 Free shipping worldwide • 🔒 Secure payment • 📱 Instant digital access
+            📦 Free shipping nationwide • 🔒 Secure payment • 📱 Instant digital access
           </p>
         </div>
       </div>
@@ -69,5 +85,5 @@ const props = defineProps({
   }
 })
 
-defineEmits(['preorder'])
+defineEmits(['order-digital', 'order-physical'])
 </script>

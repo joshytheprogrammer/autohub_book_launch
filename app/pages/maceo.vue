@@ -6,35 +6,44 @@
       :subtitle="bookData.subtitle"
       :author="bookData.author"
       :price="bookData.price"
-      @preorder="openOrderModal"
+      @order-digital="openDigitalModal"
+      @order-physical="openOrderModal"
     />
     <MaceoProgramOverview 
       :price="bookData.price" 
-      @preorder="openOrderModal" 
+      @order-digital="openDigitalModal"
+      @order-physical="openOrderModal"
     />
     <MaceoWhyThisMatters 
       :price="bookData.price" 
-      @preorder="openOrderModal" 
+      @order-digital="openDigitalModal"
+      @order-physical="openOrderModal"
     />
     <MaceoTableOfContents />
     <MaceoLearningOutcomes />
     <MaceoIndustrySectors />
     <MaceoWealthStrategies 
       :price="bookData.price" 
-      @preorder="openOrderModal" 
+      @order-digital="openDigitalModal"
+      @order-physical="openOrderModal"
     />
     <MaceoSuccessFramework 
       :price="bookData.price" 
-      @preorder="openOrderModal" 
+      @order-digital="openDigitalModal"
+      @order-physical="openOrderModal"
     />
     <MaceoFeaturesSection :features="bookData.features" />
     <MaceoTestimonialsSection :testimonials="bookData.testimonials" />
     <MaceoAboutAuthor :author="bookData.author" />
-    <MaceoValueProp :price="bookData.price" @preorder="openOrderModal" />
+    <MaceoValueProp 
+      :price="bookData.price" 
+      @order-digital="openDigitalModal"
+      @order-physical="openOrderModal"
+    />
     <MaceoEmailCapture @email-captured="handleEmailCapture" />
     <!-- <MaceoFooterSection :author="bookData.author" /> -->
     
-    <!-- Order Modal (Pay on Delivery) -->
+    <!-- Physical Order Modal (Pay on Delivery) -->
     <MaceoOrderModal
       :is-open="isOrderModalOpen"
       :book-title="bookData.title"
@@ -43,14 +52,37 @@
       :book-cover="bookData.coverSrc"
       @close="closeOrderModal"
       @order-success="handleOrderSuccess"
-      @order-error="handleOrderError"
+      @order-error="handleError"
     />
     
-    <!-- Success Modal -->
+    <!-- Physical Order Success Modal -->
     <MaceoOrderSuccess
-      :is-visible="isSuccessModalOpen"
+      :is-visible="isOrderSuccessOpen"
       :order-data="orderData"
-      @close="closeSuccessModal"
+      @close="closeOrderSuccess"
+    />
+
+    <!-- Digital Purchase Modal (Paystack) -->
+    <MaceoDigitalPurchaseModal
+      :is-open="isDigitalModalOpen"
+      :book-title="bookData.title"
+      :author="bookData.author"
+      :price="bookData.price"
+      :book-cover="bookData.coverSrc"
+      :paystack-key="paystackConfig.publicKey"
+      :product-id="'maceo-digital'"
+      :product-price="50000"
+      @close="closeDigitalModal"
+      @payment-success="handleDigitalPaymentSuccess"
+      @payment-error="handleError"
+    />
+
+    <!-- Digital Purchase Success Modal -->
+    <MaceoDigitalPurchaseSuccess
+      :is-visible="isDigitalSuccessOpen"
+      :payment-data="digitalPaymentData"
+      :download-url="downloadUrl"
+      @close="closeDigitalSuccess"
     />
     
     <!-- Error Notification -->
@@ -60,7 +92,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
         </svg>
         <div>
-          <p class="font-semibold">Order Error</p>
+          <p class="font-semibold">Error</p>
           <p class="text-sm">{{ errorMessage }}</p>
         </div>
         <button @click="errorMessage = ''" class="text-white hover:text-gray-200">
@@ -70,17 +102,44 @@
         </button>
       </div>
     </div>
+
+    <!-- Processing Overlay -->
+    <div v-if="isProcessingPayment" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center">
+      <div class="bg-white rounded-2xl p-8 text-center max-w-sm">
+        <svg class="animate-spin w-12 h-12 text-green-primary mx-auto mb-4" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <h3 class="text-lg font-semibold text-gray-900">Processing Payment...</h3>
+        <p class="text-sm text-gray-600 mt-2">Please wait while we verify your payment and generate your download link.</p>
+      </div>
+    </div>
   </main>
 </template>
 
 <script setup>
-// Order state management (Pay on Delivery)
+// Paystack configuration
+const runtimeConfig = useRuntimeConfig()
+const paystackConfig = {
+  publicKey: runtimeConfig.public.paystackPublicKey
+}
+
+// Physical Order state management
 const isOrderModalOpen = ref(false)
-const isSuccessModalOpen = ref(false)
+const isOrderSuccessOpen = ref(false)
 const orderData = ref({})
+
+// Digital Purchase state management
+const isDigitalModalOpen = ref(false)
+const isDigitalSuccessOpen = ref(false)
+const digitalPaymentData = ref({})
+const downloadUrl = ref('')
+const isProcessingPayment = ref(false)
+
+// Shared state
 const errorMessage = ref('')
 
-// Order modal functions
+// Physical Order modal functions
 function openOrderModal() {
   isOrderModalOpen.value = true
 }
@@ -92,19 +151,81 @@ function closeOrderModal() {
 function handleOrderSuccess(data) {
   isOrderModalOpen.value = false
   orderData.value = data
-  isSuccessModalOpen.value = true
+  isOrderSuccessOpen.value = true
 }
 
-function handleOrderError(error) {
+function closeOrderSuccess() {
+  isOrderSuccessOpen.value = false
+  orderData.value = {}
+}
+
+// Digital Purchase modal functions
+function openDigitalModal() {
+  isDigitalModalOpen.value = true
+}
+
+function closeDigitalModal() {
+  isDigitalModalOpen.value = false
+}
+
+async function handleDigitalPaymentSuccess(data) {
+  digitalPaymentData.value = data
+  isDigitalModalOpen.value = false
+  isProcessingPayment.value = true
+  
+  try {
+    // 1. Verify payment and get download token
+    const verifyResponse = await $fetch('/api/verify-payment', {
+      method: 'POST',
+      body: {
+        reference: data.reference,
+        productId: data.productId,
+        email: data.email,
+        customerName: data.name
+      }
+    })
+    
+    if (!verifyResponse.body?.success) {
+      throw new Error(verifyResponse.body?.error || 'Payment verification failed')
+    }
+    
+    downloadUrl.value = verifyResponse.body.downloadUrl
+    
+    // 2. Send download email
+    await $fetch('/api/send-download-email', {
+      method: 'POST',
+      body: {
+        email: data.email,
+        customerName: data.name,
+        productId: data.productId,
+        downloadUrl: verifyResponse.body.downloadUrl,
+        reference: data.reference
+      }
+    })
+    
+    // Show success modal
+    isDigitalSuccessOpen.value = true
+    
+  } catch (error) {
+    console.error('Error processing payment:', error)
+    handleError('Payment received but there was an issue generating your download link. Please contact support with your reference number: ' + data.reference)
+  } finally {
+    isProcessingPayment.value = false
+  }
+}
+
+function closeDigitalSuccess() {
+  isDigitalSuccessOpen.value = false
+  digitalPaymentData.value = {}
+  downloadUrl.value = ''
+}
+
+// Shared error handler
+function handleError(error) {
   errorMessage.value = error
   setTimeout(() => {
     errorMessage.value = ''
-  }, 5000)
-}
-
-function closeSuccessModal() {
-  isSuccessModalOpen.value = false
-  orderData.value = {}
+  }, 8000)
 }
 
 const bookData = {
