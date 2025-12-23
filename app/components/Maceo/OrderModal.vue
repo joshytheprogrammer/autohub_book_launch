@@ -58,7 +58,7 @@
                 <p class="text-sm text-amber-800 font-medium">Pay on Delivery</p>
                 <p class="text-xs text-amber-700 mt-1">
                   No payment required now. You'll pay {{ price }} when your book arrives.
-                  Delivery typically takes 3-7 business days within Nigeria.
+                  Free delivery within Lagos. Other states may incur delivery fees.
                 </p>
               </div>
             </div>
@@ -160,7 +160,7 @@
               </div>
               <div class="flex justify-between text-gray-700">
                 <span>Delivery:</span>
-                <span class="font-medium">3-7 business days</span>
+                <span class="font-medium">Free within Lagos</span>
               </div>
               <div class="border-t border-green-200 my-2"></div>
               <div class="flex justify-between text-lg font-bold">

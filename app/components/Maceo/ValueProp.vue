@@ -69,7 +69,7 @@
             </button>
           </div>
           <p class="text-sm text-gray-500 mt-3 text-center">
-            📦 Free shipping nationwide • 🔒 Secure payment • 📱 Instant digital access
+            📦 Free delivery within Lagos • 🔒 Secure payment • 📱 Instant digital access
           </p>
         </div>
       </div>
